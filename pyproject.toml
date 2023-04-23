@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "latexautotable"
+name = "AutoTable"
 version = "0.1.0"
 description = ""
 authors = ["voetberg <magpie127@gmail.com>"]
