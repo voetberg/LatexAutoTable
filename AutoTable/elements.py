@@ -31,7 +31,7 @@ class Elements:
         super_header = Elements.replace_braces(super_header)
 
         header = Elements.single_row(columns)
-        table = [header]
+        table = [super_header, header]
 
         for row, name in zip(data_to_fill, rows_name): 
             data_fill = list(row)
@@ -42,7 +42,8 @@ class Elements:
 
     @staticmethod
     def joined_rows(rows): 
-        return " \\\\ \n".join(rows)
+        table = " \\\\ \n".join(rows)
+        return table + " \\\\ \n"
 
     @staticmethod
     def replace_braces(joined_row): 
